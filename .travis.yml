@@ -1,0 +1,11 @@
+language: ruby
+rvm:
+- 2.2.1
+script: rake travis
+deploy:
+  provider: heroku
+  api_key:
+    secure: YmYxP2RhrtPfalRal35YiZyjDGomC7usCdz4dH6wmBUuI1jbTZ/giFZgUExEwCSG69JVR+Z/Jz6AmVQUdxAF81KpKXOs4/9bT+N/GuG2YdhIGbX3OOoaCUN1lzOVyT5S3z576DMe8wYsPRJrWHOmb5BTAAL7OcwCXuY1UV30FOPLD+vtFZ85zg4FUUOqrOO3ghg5GHX1Ex5WjgrUzbjwORCLR5CA42Vh05L88/1yxzvEx8FDtskeDHEvIyx9nvLYwiHte6V0+PU8+praT1u00TOl1oRiWy9n1myuEy00xf0S9EjGfBBQhfrWmEdRL3HFfm8drGX3CgM5NY6G9IyQNL9IhRCQXdf0DGngXIZjQAaP7LeuwgZytEQaLTFlR0wHtbzJnX+ocNGV7W3FHInavEYQ7SlHwZQxbFQNHg2wcOcR+7CJy7zJcD8Yi89tG5JMF1i0/Qt2vbirg8OfjV8IAt62zdtdxDZolGN8ouSzqFKfZGHXnEbD/iB/cf6f11K14ykMi/QJqEZ0+IiDjxgh2B+9rMAbRiYjzFl4EM7V2xKDTvH9tKXO+5BqZrxnCrPZgTloVXtJXY1dW0gE1ztV+Mv+ddpcUfoxTDGpQKT3zus31eElYtSq+nEYuxwKC4a5PGbLWYi2zCucVyQD6Ngq7fDXYaVmTo1+raL/Egb9CMM=
+  app: floating-savannah-9024
+  on:
+    repo: samlawrencejones/rails-tutorial

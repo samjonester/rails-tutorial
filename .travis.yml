@@ -9,3 +9,6 @@ deploy:
   app: floating-savannah-9024
   on:
     repo: samlawrencejones/rails-tutorial
+  run:
+    - "rake db:migrate:reset"
+    - "rake db:seed"
